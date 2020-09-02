@@ -1,0 +1,8 @@
+.imagecontainer{
+    background: url('https://i.postimg.cc/76kStDSv/food-wallpaper.png');
+    border-style: solid ;
+    border-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: "500px";
+}

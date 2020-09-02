@@ -2,7 +2,7 @@ import React from 'react';
 import Search from './Search';
 import Footer from './Footer';
 import QuickSearch from './QuickSearch';
-
+import './Home.css';
 
 //functional Component
 const Home = (props) => {
@@ -13,7 +13,9 @@ const Home = (props) => {
 
     return(
         <div>
+            <div className="imagecontainer">
             <Search restid={(data) => {handleRestaurant(data)}}/>
+            </div>
             <QuickSearch/>
             <hr/>
             <Footer year="2020" month="july"/>

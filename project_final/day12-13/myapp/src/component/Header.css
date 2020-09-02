@@ -1,0 +1,51 @@
+.navbar-inverse{
+    background-color: #ce0505;
+   
+  }
+  #logo{
+    
+    font-size: 36px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.52;
+    letter-spacing: normal;
+    text-align: center;
+    color: #eb2929;
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    
+    margin-left:112px;
+    margin-top:10px;
+    margin-bottom:18px;
+    border-radius:50px;
+    display:inline-block;
+    position:center;
+    
+    
+  }
+  
+  #l{
+  
+  font-size:20px;
+  
+  
+  }
+  
+  
+  .collapse navbar-collapse{
+  
+    padding-left:25px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  button.nav-item{
+    outline:none;
+    background-color: #ce0505;
+     color:white;
+      border: solid 1px;
+      width:181px;
+      height:46px;
+      border-radius: 3px;
+  }

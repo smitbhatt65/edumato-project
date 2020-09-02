@@ -1,0 +1,5 @@
+when component load
+> constructre> render > componentDidMount
+
+When state change
+> event> render > componentDidUpdate

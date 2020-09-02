@@ -45,7 +45,7 @@ class Details extends Component {
     }
 
     componentDidMount(){
-        sessionStorage.setItem('mealid',this.props.match.params.id)
+       
         let mealid = parseInt(this.props.match.params.id)
         axios.get(`${restdetail}/${this.state.citiId}/${mealid}`)
         .then((response) => {this.setState({restlist:response.data})})

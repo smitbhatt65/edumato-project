@@ -39,6 +39,7 @@ class Search extends Component {
 
     renderRest = (data) => {
         if(data){
+            
             return data.map((item) => {
                 return(
                     <option value={item._id}>
@@ -63,6 +64,7 @@ class Search extends Component {
                     </select>
                     {/*<input list="restaurent" name="rests" id="rests"/>*/}
                     <select id="restaurent" onChange={this.handleRestaurent}>
+                    <option value={0}>select</option>
                         {this.renderRest(this.state.restaurants)}
                     </select>
                 </center>

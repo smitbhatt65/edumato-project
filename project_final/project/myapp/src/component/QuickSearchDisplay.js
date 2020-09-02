@@ -1,15 +1,22 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 import './QuickSearchDisplay.css';
 
-const DisplaySearch = (props) => {
 
+const DisplaySearch = (props) => {
+const handleclick=(id)=>
+{
+    this.props.history.push(`/details/${id}`);
+    sessionStorage.setItem('mealId',id);
+}
     const listMeal = ({mealData}) => {
         if(mealData){
             return mealData.map((item) => {
                 return(
-                        <Link to={`/details/${item.mealtype}`}>
-                            <div className="tileContainer">
+                        
+                            <div className="tileContainer" onClick = {handleclick(item.id)} >
+                                
+                        
                                 <div className="tileComponent1">
                                     <img src={`/images/${item.name}.jpg`} />
                                 </div>
@@ -23,7 +30,7 @@ const DisplaySearch = (props) => {
                                 </div>
 
                             </div>
-                        </Link>
+                       
                 )
             })
         }
@@ -44,4 +51,4 @@ const DisplaySearch = (props) => {
     )
 }
 
-export default DisplaySearch;
+export default withRouter (DisplaySearch);

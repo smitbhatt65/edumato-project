@@ -28,8 +28,7 @@ class SortFilter extends Component
             <center>Sort</center>
             <hr/>
             <div onChange={this.sortFilter}>
-            <input type="radio" id="none" name="sort" value=""/>
-            <label for="none" className="radio">Default </label>
+            
             <input type="radio" id="ascending" name="sort" value="1" />
             <label for="ascending" className="radio">low to high</label> 
             <br/>

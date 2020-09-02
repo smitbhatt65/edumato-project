@@ -19,7 +19,7 @@ class Restaurent extends Component {
         let citiId=parseInt(sessionStorage.getItem('citiId'))
         let mealid = parseInt(sessionStorage.getItem('mealid'))
         /*if (mealid)*/
-        this.props.history.push(`/details/${mealid}`)
+        this.props.history.push(`/`)
         /*else 
         this.props.history.push(`/details/${citiId}`)*/
         

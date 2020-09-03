@@ -12,7 +12,7 @@ const Home = (props) => {
     }
 
     return(
-        <div>
+        <div className="homepage">
             <div className="imagecontainer">
             <Search restid={(data) => {handleRestaurant(data)}}/>
             </div>

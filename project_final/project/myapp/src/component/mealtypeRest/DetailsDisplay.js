@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-const DetailDiaplay = (props) => {
+const DetailDisplay = (props) => {
     console.log(props)
 
     const renderTable = ({restdata}) => {
@@ -43,4 +43,4 @@ const DetailDiaplay = (props) => {
     )
 }
 
-export default DetailDiaplay;
+export default DetailDisplay;

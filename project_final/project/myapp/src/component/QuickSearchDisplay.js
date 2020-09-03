@@ -1,11 +1,12 @@
 import React from 'react';
 import {withRouter} from 'react-router-dom';
 import './QuickSearchDisplay.css';
-
+import {Link} from 'react-router-dom';
 
 const DisplaySearch = (props) => {
 const handleclick=(id)=>
 {
+  
     this.props.history.push(`/details/${id}`);
     sessionStorage.setItem('mealId',id);
 }
@@ -13,8 +14,8 @@ const handleclick=(id)=>
         if(mealData){
             return mealData.map((item) => {
                 return(
-                        
-                            <div className="tileContainer" onClick = {handleclick(item.id)} >
+                    
+                            <div className="tileContainer"  onClick = {handleclick(item._id)} >
                                 
                         
                                 <div className="tileComponent1">
@@ -30,7 +31,7 @@ const handleclick=(id)=>
                                 </div>
 
                             </div>
-                       
+                          
                 )
             })
         }

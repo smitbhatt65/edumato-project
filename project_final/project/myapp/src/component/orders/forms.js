@@ -57,6 +57,7 @@ class Forms extends Component{
 
     handleCancel=() => {
         this.props.history.push('/')
+        sessionStorage.clear()
     }
 
     render(){

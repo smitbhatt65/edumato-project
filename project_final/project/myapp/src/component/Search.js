@@ -60,11 +60,12 @@ class Search extends Component {
             <header>
                 <center>
                     <select onChange={this.handleCity}>
+                    <option value={0}>select locality</option>
                        {this.renderCity(this.state.location)}
                     </select>
-                    {/*<input list="restaurent" name="rests" id="rests"/>*/}
-                    <select id="restaurent" onChange={this.handleRestaurent}>
-                    <option value={0}>select</option>
+                    
+                    <select id="restaurant" onChange={this.handleRestaurent}>
+                    <option value={0}>select restaurant</option>
                         {this.renderRest(this.state.restaurants)}
                     </select>
                 </center>
@@ -86,6 +87,3 @@ class Search extends Component {
 
 export default Search;
 
-/*
- {item.name} | {item.locality}
-*/

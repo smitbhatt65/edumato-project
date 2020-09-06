@@ -4,18 +4,19 @@ import './QuickSearchDisplay.css';
 import {Link} from 'react-router-dom';
 
 const DisplaySearch = (props) => {
-const handleclick=(id)=>
-{
+//const handleclick=(id)=>
+//{
   
-    this.props.history.push(`/details/${id}`);
-    sessionStorage.setItem('mealId',id);
-}
+   // this.props.history.push(`/details/${id}`);
+   // sessionStorage.setItem('mealId',id);
+   // onClick = {handleclick(item._id)}
+//}
     const listMeal = ({mealData}) => {
         if(mealData){
             return mealData.map((item) => {
                 return(
-                    
-                            <div className="tileContainer"  onClick = {handleclick(item._id)} >
+                        <Link to={`/details/${item._id}`}>
+                            <div className="tileContainer"   >
                                 
                         
                                 <div className="tileComponent1">
@@ -31,6 +32,7 @@ const handleclick=(id)=>
                                 </div>
 
                             </div>
+                            </Link>
                           
                 )
             })

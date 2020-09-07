@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './orderView.css'
 const OrderView = (props) => {
     console.log(props)
 
@@ -23,16 +23,16 @@ const OrderView = (props) => {
     return(
         <div className="container">
             <center><h3>Order List</h3></center>
-            <table className="table table-responsive">
+            <table className="table table-responsive table-hover" >
                 <thead>
                     <tr>
-                        <th>order_id</th>
-                        <th>rest_id</th>
-                        <th>name</th>
-                        <th>phone</th>
-                        <th>email</th>
-                        <th>address</th>
-                        <th>person</th>
+                        <th><h1>order_id</h1></th>
+                        <th><h1>rest_id</h1></th>
+                        <th><h1>name</h1></th>
+                        <th><h1>phone</h1></th>
+                        <th><h1>email</h1></th>
+                        <th><h1>address</h1></th>
+                        <th><h1>person</h1></th>
                     </tr>
                 </thead>
                 <tbody>

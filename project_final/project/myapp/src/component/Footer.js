@@ -4,7 +4,10 @@ const Footer = (props) => {
     return(
         <div>
             <center>
-                <h4>&copy; Edureka {props.month} {props.year}</h4>
+                <h3> Edumato&copy; product time:{props.month}{props.year}</h3>
+                <p>contact us on
+                <a href="https://www.facebook.com/smit.bhatt65/" target="_blank">Facebook</a></p>
+
             </center>
         </div>
     )

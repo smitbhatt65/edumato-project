@@ -57,20 +57,20 @@ class Search extends Component {
 
     render(){
         return(
-            <header>
+            <div align>
                 <center>
-                    <select onChange={this.handleCity}>
+                    <select onChange={this.handleCity} style={{width:"180px",height:"40px"}} >
                     <option value={0}>select locality</option>
                        {this.renderCity(this.state.location)}
                     </select>
                     
-                    <select id="restaurant" onChange={this.handleRestaurent}>
+                    <select id="restaurant" onChange={this.handleRestaurent} style={{width:"180px",height:"40px"}}>
                     <option value={0}>select restaurant</option>
                         {this.renderRest(this.state.restaurants)}
                     </select>
                 </center>
                 <hr/>
-            </header>
+                </div>
         )
     }
 

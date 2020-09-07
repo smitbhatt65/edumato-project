@@ -15,6 +15,21 @@ const Home = (props) => {
         <div className="homepage">
             <div className="imagecontainer">
             <Search restid={(data) => {handleRestaurant(data)}}/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+           
+
+
+
             </div>
             <QuickSearch/>
             <hr/>

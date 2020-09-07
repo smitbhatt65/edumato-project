@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import axios from 'axios';
 import OrderView from './orderView';
 
+
 const orderdetail = "http://localhost:8900/allOrder";
 
 class OrderDisplay extends Component{
@@ -16,7 +17,7 @@ class OrderDisplay extends Component{
     render(){
         return(
             <div>
-            <div className="container">
+            <div className="container" >
                 <div>
                     <OrderView orderdata={this.state.orders}/> 
                 </div>

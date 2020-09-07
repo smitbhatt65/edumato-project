@@ -27,6 +27,7 @@ const DetailDisplay = (props) => {
                <hr/>
    
                    </div>
+                  
                </div>
    
            </div>

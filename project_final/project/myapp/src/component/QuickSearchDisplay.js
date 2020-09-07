@@ -2,7 +2,7 @@ import React from 'react';
 import {withRouter} from 'react-router-dom';
 import './QuickSearchDisplay.css';
 import {Link} from 'react-router-dom';
-
+import Emoji from 'a11y-react-emoji'
 const DisplaySearch = (props) => {
 //const handleclick=(id)=>
 //{

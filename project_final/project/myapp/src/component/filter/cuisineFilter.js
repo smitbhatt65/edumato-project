@@ -10,7 +10,7 @@ class CusineFilter extends Component {
         let citiid = parseInt(this.props.citiIdNo)
         let cuisine = Number(event.target.value)
         let url;
-        if(cuisine === ""){
+        if(event.target.value === ""){
             url = `${restdetail}/${citiid}/${mealid}`
         }else{
             url = `${restdetail}/${citiid}/${mealid}?cuisine=${cuisine}`
@@ -25,23 +25,30 @@ class CusineFilter extends Component {
                <center>Cuisine</center>
                         <hr/>
                         <div onChange={this.cuisineFilter}>
-                        <label className="radio">
-                                <input type="radio" value="" name="cuisine"/>All
+                       
+                        <input id="All" type="radio" value="" name="cuisine"/>
+                                <label className="radio" for="All">
+                                All
                             </label>
-                            <label className="radio">
-                                <input type="radio" value="1" name="cuisine"/>North
+                            <input type="radio" value="1" name="cuisine" id="North"/>
+                            <label for="North" className="radio">
+                                North
                             </label>
-                            <label className="radio">
-                                <input type="radio" value="2" name="cuisine"/>South
+                            <input type="radio" value="2" name="cuisine" id="South"/>
+                            <label  className="radio" for="South">
+                               South
                             </label>
-                            <label className="radio">
-                                <input type="radio" value="3" name="cuisine"/>Chinese   
+                            <input type="radio" value="3" name="cuisine" id="Chinese"/>
+                            <label  className="radio" for="Chinese">
+                                Chinese   
                             </label>
-                            <label className="radio">
-                                <input type="radio" value="4" name="cuisine"/>Fast Food 
+                            <input type="radio" value="4" name="cuisine"  id="Fast Food"/>
+                            <label className="radio" for="Fast Food">
+                               Fast Food 
                             </label>
-                            <label className="radio">
-                                <input type="radio" value="5" name="cuisine"/>Street Food
+                            <input type="radio" value="5" name="cuisine" id="Street Food"/>
+                            <label className="radio" for="Street Food">
+                               Street Food
                             </label> 
                             <br/>
                         </div>

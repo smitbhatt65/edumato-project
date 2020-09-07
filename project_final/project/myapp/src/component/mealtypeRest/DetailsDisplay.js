@@ -2,10 +2,15 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 
 const DetailDisplay = (props) => {
-    console.log(props)
-
+    console.log(props.length)
+    let a=props.length;
+    
     const maprestaurants = ({restdata}) => {
-        if(restdata){
+        //if(a===0)
+        //return(
+        //    <h1 >No Restaurants Available</h1>
+       // )
+         if(restdata){
             return restdata.map((item) => {
                 return(
                     <Link to={`/rest/${item._id}`}>
@@ -35,11 +40,14 @@ const DetailDisplay = (props) => {
                 )
             })
         }
+        
+       
     }
  
     return(
         <div className="container">
             <center><h3>Restaurants List</h3></center>
+         
             {maprestaurants(props)}
 
             

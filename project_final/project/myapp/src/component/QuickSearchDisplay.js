@@ -46,7 +46,7 @@ const DisplaySearch = (props) => {
                     Quick Searches
                 </p>
                 <p className="quickSearchSubHeading">
-                    Tired of Searching for a restaurant? Select a mealtype instead!!
+                   <center><strong> Tired of Searching for a restaurant? Select a mealtype instead!!</strong></center>
                 </p>
                 {listMeal(props)}
             </div> 

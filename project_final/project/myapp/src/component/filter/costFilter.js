@@ -26,14 +26,17 @@ class CostFilter extends Component {
                 <center>Cost To Filter</center>
                 <hr/>
                 <div onChange={this.costFilter}>
-                        <label className="radio">
-                                <input type="radio" value="" name="range"/>All
+                <input type="radio" value="" name="range" id="All"/>
+                        <label  className="radio" for="All">
+                                All
                             </label>
-                            <label className="radio">
-                                <input type="radio" value="0,500" name="range"/>0-500
+                            <input type="radio" value="0,500" name="range" id="0-500"/>
+                            <label className="radio" for="0-500">
+                                0-500
                             </label>
-                            <label className="radio">
-                                <input type="radio" value="501,1000" name="range"/>500-1000
+                            <input type="radio" value="501,1000" name="range" id="500-1000"/>
+                            <label className="radio" for="501-1000">
+                                500-1000
                             </label> 
                 </div>
             </React.Fragment>

@@ -4,10 +4,10 @@ const Footer = (props) => {
     return(
         <div>
             <center>
-                <h3> Edumato&copy; product time:{props.month}{props.year}</h3>
-                <p>contact us on
-                <a href="https://www.facebook.com/smit.bhatt65/" target="_blank">Facebook</a></p>
-
+                <h3> Edumato&copy; product Launch:{props.month}{props.year}</h3>
+                <h4>contact us on
+                <a href="https://www.facebook.com/smit.bhatt65/" target="_blank"><h1><i class="fa fa-facebook-square" ></i></h1></a>
+                <a href="https://www.instagram.com/smitbhatt65/" target="_blank"><h1><i class="fa fa-instagram" ></i></h1></a></h4>
             </center>
         </div>
     )

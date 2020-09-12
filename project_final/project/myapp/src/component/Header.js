@@ -4,7 +4,7 @@ import './Header.css'
 const Header = () => {
     return(
         <div>
-            <nav className="navbar navbar-inverse navbar-expand-md navbar-light bg-danger" > 
+            <nav className="navbar navbar-inverse navbar-expand-md navbar-light bg-danger " > 
     <div className="container-fluid">
         <div className="navbar-header"> <Link to={`/`}>
                   <a id="logo">e!</a></Link>

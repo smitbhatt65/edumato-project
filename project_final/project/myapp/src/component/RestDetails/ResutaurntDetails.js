@@ -54,9 +54,9 @@ class Restaurent extends Component {
                                 <h3>{rest.name}</h3>
                                 <h4>{rest.locality}</h4>
                                 <h4>{rest.address}</h4>
-                                <h4>Rs.{rest.cost}  Per Two</h4>
+                                <h4><span><i class="fa fa-inr" aria-hidden="true"></i></span>&nbsp;{rest.cost}  Per Two</h4>
                                 <button type="button"  data-toggle="modal" data-target="#myModal">
-    Click for Pictures
+Click for Pictures
   </button>
   <div className="modal fade" id="myModal">
     <div className="modal-dialog">
@@ -87,7 +87,8 @@ class Restaurent extends Component {
 
                             <TabPanel>
                                 <div>
-                                    <div className="about">About this Place</div>
+                                    <div className="about">About this Place:
+        <p>You will never forget the {rest.name} experience!!</p></div>
                                     <br />
                                     <div className="cuisine">Cuisine</div>
                                     <div className="bakery">Fast Food 🍟</div>
@@ -98,11 +99,11 @@ class Restaurent extends Component {
                             </TabPanel>
                             <TabPanel>
                                 <div>
-                                    <div className="phone-number">Phone Number</div>
+                                    <div className="phone-number">Phone Number <span><i class="fa fa-phone-square" aria-hidden="true"/></span></div>
                                     <div className="pdigit">45456556</div>
                                     <br />
                                     <div className="bheader">{rest.locality}</div>
-                                    <div className="address">{rest.address}</div>
+                                    <div className="address">{rest.address}&nbsp;<span><i class="fa fa-building" aria-hidden="true"></i></span></div>
                                 </div>
                             </TabPanel>
                         </Tabs>

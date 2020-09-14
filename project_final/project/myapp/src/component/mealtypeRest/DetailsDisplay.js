@@ -1,9 +1,19 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import './Details.css'
 
 const DetailDisplay = (props) => {
     console.log(props.length)
     let a=props.length;
+
+    const displaynothing=(props)=>
+    {
+        if(props.length===0)
+        return(
+            <h1>NO Restaurants</h1>
+        )
+    }
+   
     
     const maprestaurants = ({restdata}) => {
         //if(a===0)
@@ -29,17 +39,22 @@ const DetailDisplay = (props) => {
                cost for two:{item.cost}<br/>
                mealtype:{item.type[0].name}&nbsp;{item.type[1].name}<br/>
                cuisine:{item.Cuisine[0].name} &nbsp; {item.Cuisine[1].name}
-               <hr/>
+           
    
                    </div>
                   
                </div>
    
            </div>
+           &nbsp;
+        
            </Link>
                 )
             })
         }
+        else if(a==='0')
+        {displaynothing(props)}
+        
         
        
     }

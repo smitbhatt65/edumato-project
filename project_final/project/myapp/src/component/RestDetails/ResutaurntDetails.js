@@ -5,7 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Imagescarousel from './Imagescarousel'
 import './RestaurntDetails.css'
-import TabContainer from 'react-bootstrap/TabContainer'
+
 
 
 const restdetail = "http://localhost:8900/restaurantdetails";
@@ -19,13 +19,11 @@ class Restaurent extends Component {
     }
 
     backbutton = (event) => {
-       /* let citiId=parseInt(sessionStorage.getItem('citiId'))
-        let mealid = parseInt(sessionStorage.getItem('mealid'))
-        /*if (mealid)*/
-        this.props.history.push(`/`)
+       
         sessionStorage.clear()
-        /*else 
-        this.props.history.push(`/details/${citiId}`)*/
+        this.props.history.push(`/`)
+        
+        
         
     }
     
@@ -43,8 +41,7 @@ class Restaurent extends Component {
                     <div className="panel-body">
                         <div className="row">
                             <div className="col-md-6">
-                             {/*<Carousel src={this.state.rest.thumb} name={this.state.rest.name}/>*/}
-                             {/*<Imagescarousel src={rest.thumb}/>*/}
+                            
                               <img className="img-responsive" src={rest.thumb}/>
                  
                             </div>
@@ -55,10 +52,10 @@ class Restaurent extends Component {
                                 <h4>{rest.locality}</h4>
                                 <h4>{rest.address}</h4>
                                 <h4><span><i class="fa fa-inr" aria-hidden="true"></i></span>&nbsp;{rest.cost}  Per Two</h4>
-                                <button type="button"  data-toggle="modal" data-target="#myModal">
+                                <button type="button"  data-toggle="modal" data-target="#modalcarousel">
 Click for Pictures
   </button>
-  <div className="modal fade" id="myModal">
+  <div className="modal fade" id="modalcarousel">
     <div className="modal-dialog">
       <div className="modal-content">
       
@@ -72,14 +69,14 @@ Click for Pictures
         <div className="modal-body">
          <Imagescarousel/>
         </div>
-                            </div>
-                            </div>
+        </div> 
+    </div>
     </div>
                             </div>
                         </div> 
                         <br/>
                         <div>
-                        <Tabs defaultActiveKey="Contact" id="uncontrolled-tab-example">
+                        <Tabs  >
                             <TabList>
                                 <Tab eventKey="Overview"><span className="overview">Overview</span></Tab>
                                 <Tab eventKey="Contact" ><span className="Contact">Contact</span></Tab>
@@ -90,7 +87,7 @@ Click for Pictures
                                     <div className="about">About this Place:
         <p>You will never forget the {rest.name} experience!!</p></div>
                                     <br />
-                                    <div className="cuisine">Cuisine</div>
+                                    <div className="cuisine">Cuisine:</div>
                                     <div className="bakery">Fast Food 🍟</div>
                                     <br />
                                     <div className="cuisine">Average Cost</div>

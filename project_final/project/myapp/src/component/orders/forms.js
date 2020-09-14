@@ -56,8 +56,9 @@ class Forms extends Component{
     }
 
     handleCancel=() => {
+        sessionStorage.clear();
         this.props.history.push('/')
-        sessionStorage.clear()
+       
     }
 
     render(){
@@ -87,29 +88,29 @@ class Forms extends Component{
                             <input type="text" name="name" 
                             value={this.state.name}
                             className="form-control"
-                            required
-                            onChange={this.handleChangeName}/>
+                            
+                            onChange={this.handleChangeName} required/>
                         </div>
                         <div className="form-group">
                             <label className="control-label">Phone:</label>
                             <input type="text" name="phone" 
                             value={this.state.phone}
                             className="form-control"
-                            onChange={this.handleChangePhone}/>
+                            onChange={this.handleChangePhone} required/>
                         </div>
                         <div className="form-group">
                             <label className="control-label">Email:</label>
                             <input type="text" name="email" 
                             value={this.state.email}
                             className="form-control"
-                            onChange={this.handleChangeEmail}/>
+                            onChange={this.handleChangeEmail} required/>
                         </div>
                         <div className="form-group">
                             <label className="control-label">address:</label>
                             <input type="text" name="address" 
                             value={this.state.address}
                             className="form-control"
-                            onChange={this.handleChangeAddress}/>
+                            onChange={this.handleChangeAddress} required/>
                         </div>
                         <div className="form-group">
                             <label className="control-label">How many Person:</label>

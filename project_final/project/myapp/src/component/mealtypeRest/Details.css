@@ -1,0 +1,10 @@
+div.col-md-2{
+    border-style: outset;
+  border-color: red;
+}
+
+
+div .row#tile{
+    border-style: solid;
+    border-color: black;
+}

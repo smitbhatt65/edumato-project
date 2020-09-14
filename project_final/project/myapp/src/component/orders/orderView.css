@@ -9,7 +9,7 @@ body {
   font-weight: 300;
   line-height: 1.42em;
   color:#A7A1AE;
-  /*background-color:#1F2739;*/
+
 }
 
 
@@ -18,12 +18,9 @@ body {
 
 
 
-.blue { color: #185875; }
-.yellow { color: #FFF842; }
-
 .container th h1 {
 	  font-weight: bold;
-	  font-size: 1em;
+
   text-align: left;
   color: white;
 }
@@ -31,8 +28,7 @@ body {
 .container td {
 	  font-weight: normal;
 	  font-size: 1em;
-  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
-	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+  
 	        box-shadow: 0 2px 2px -2px #0E1119;
 }
 
@@ -42,10 +38,8 @@ body {
 	  width: 80%;
 	  margin: 0 auto;
   display: table;
-  padding: 0 0 8em 0;
-  /*background-image: url("/images/orders1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;*/
+  
+ 
   
 }
 
@@ -73,8 +67,7 @@ body {
 
 .container tr:hover {
    background-color: #464A52;
--webkit-box-shadow: 0 6px 6px -6px #0E1119;
-	   -moz-box-shadow: 0 6px 6px -6px #0E1119;
+
 	        box-shadow: 0 6px 6px -6px #0E1119;
 }
 
@@ -90,9 +83,4 @@ body {
 	  transition-duration: 0.4s;
 	  transition-property: all;
   transition-timing-function: line;
-}
-
-@media (max-width: 800px) {
-.container td:nth-child(4),
-.container th:nth-child(4) { display: none; }
 }

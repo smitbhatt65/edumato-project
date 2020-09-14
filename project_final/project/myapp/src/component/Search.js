@@ -50,7 +50,7 @@ class Search extends Component {
         }
     }
 
-    handleRestaurent =(event) => {
+    handleRestaurant =(event) => {
         console.log(event.target.value)
         this.props.restid(Number(event.target.value))
     }
@@ -64,7 +64,7 @@ class Search extends Component {
                        {this.renderCity(this.state.location)}
                     </select>
                     
-                    <select id="restaurant" onChange={this.handleRestaurent} style={{width:"180px",height:"40px"}}>
+                    <select id="restaurant" onChange={this.handleRestaurant} style={{width:"180px",height:"40px"}}>
                     <option value={0}>select restaurant</option>
                         {this.renderRest(this.state.restaurants)}
                     </select>

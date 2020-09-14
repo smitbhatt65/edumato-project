@@ -23,7 +23,7 @@ class CostFilter extends Component {
     render(){
         return(
             <React.Fragment>
-                <center>Cost To Filter</center>
+                <center><strong>Cost Filter</strong></center>
                 <hr/>
                 <div onChange={this.costFilter}>
                 <input type="radio" value="" name="range" id="All"/>

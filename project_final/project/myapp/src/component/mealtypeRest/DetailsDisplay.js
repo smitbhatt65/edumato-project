@@ -4,23 +4,16 @@ import './Details.css'
 
 const DetailDisplay = (props) => {
     console.log(props.length)
-    let a=props.length;
 
-    const displaynothing=(props)=>
-    {
-        if(props.length===0)
-        return(
-            <h1>NO Restaurants</h1>
-        )
-    }
-   
+
+  
     
     const maprestaurants = ({restdata}) => {
-        //if(a===0)
-        //return(
-        //    <h1 >No Restaurants Available</h1>
-       // )
-         if(restdata){
+        if(restdata.length===0)
+        {return(
+            <h1 >Sorry,No Restaurants Available!</h1>
+        )}
+        else if(restdata){
             return restdata.map((item) => {
                 return(
                     <Link to={`/rest/${item._id}`}>
@@ -52,10 +45,7 @@ const DetailDisplay = (props) => {
                 )
             })
         }
-        else if(a==='0')
-        {displaynothing(props)}
-        
-        
+       
        
     }
  

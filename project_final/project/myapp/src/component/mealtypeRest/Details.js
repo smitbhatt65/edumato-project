@@ -33,13 +33,13 @@ class Details extends Component {
         this.setState({restlist:sortedData})
     }
 
-    handlePageChange(pageNumber) {
-        console.log(`active page is ${pageNumber}`);
-        this.setState({activePage: pageNumber});
+   // handlePageChange(pageNumber) {
+      //  console.log(`active page is ${pageNumber}`);
+       // this.setState({activePage: pageNumber});
         //let mealid = parseInt(this.props.match.params.id)
         //axios.get(`${restdetail}/${this.state.citiId}/${mealid}/${pageNumber}`)
         //.then((response) => {this.setState({restlist:response.data})})
-      }
+     // }
     render(){
         return(
             <div>

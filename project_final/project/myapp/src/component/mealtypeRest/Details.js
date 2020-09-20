@@ -54,15 +54,7 @@ class Details extends Component {
 
                        
                     </div>
-                   {/* <div>
-                        <Pagination
-                        activePage={this.state.activePage}
-                        itemsCountPerPage={2}
-                        totalItemsCount={450}
-                        pageRangeDisplayed={5}
-                        onChange={this.handlePageChange.bind(this)}
-                        />
-                   </div>*/}
+                  
                 </div>
             </div>
         )

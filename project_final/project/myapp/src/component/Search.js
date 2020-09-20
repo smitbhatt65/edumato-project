@@ -4,8 +4,8 @@ const locurl = "http://localhost:8900/location";
 const resturl = "http://localhost:8900/restauranthome?city=";
 
 class Search extends Component {
-    constructor(props){
-        super(props)
+    constructor(){
+        super()
         this.state={
             location:'',
             city:'',

@@ -251,7 +251,7 @@ db.restaurant.insertMany(
                         "name" : "Chinese"
                 }
         ]
-}
+},
 {
         "_id" : "9",
         "name" : "Rajinder Da Dhaba",
@@ -282,7 +282,7 @@ db.restaurant.insertMany(
                         "name" : "Street Food"
                 }
         ]
-}
+},
 {
         "_id" : "10",
         "name" : "Diggin",
@@ -313,7 +313,7 @@ db.restaurant.insertMany(
                         "name" : "Street Food"
                 }
         ]
-}
+},
 {
         "_id" : "11",
         "name" : "Saravana Bhavan",
@@ -344,7 +344,7 @@ db.restaurant.insertMany(
                         "name" : "South Indian"
                 }
         ]
-}
+},
 {
         "_id" : "12",
         "name" : "Bukhara",
@@ -375,7 +375,7 @@ db.restaurant.insertMany(
                         "name" : "Chinese"
                 }
         ]
-}
+},
 {
         "_id" : "13",
         "name" : "Sarvodaya",
@@ -407,7 +407,7 @@ db.restaurant.insertMany(
                         "name" : "Fast Food"
                 }
         ]
-}
+},
 {
         "_id" : "14",
         "name" : "Shabari",
@@ -439,7 +439,7 @@ db.restaurant.insertMany(
                         "name" : "Street Food"
                 }
         ]
-}
+},
 {
         "_id" : "15",
         "name" : "Shiro",
@@ -471,7 +471,7 @@ db.restaurant.insertMany(
                         "name" : "Chinese"
                 }
         ]
-}
+},
 {
         "_id" : "16",
         "name" : "Regenta Central",
@@ -503,7 +503,7 @@ db.restaurant.insertMany(
                         "name" : "Street Food"
                 }
         ]
-}
+},
 {
         "_id" : "17",
         "name" : "Arthur's Theme",
@@ -533,6 +533,39 @@ db.restaurant.insertMany(
                 {
                         "cuisine" : "5",
                         "name" : "Street Food"
+                }
+        ]
+},
+
+{
+        "_id" : "18",
+        "name" : "Aparna",
+        "locality" : "Sion,Mumbai",
+        "city_name" : "Mumbai",
+        "city" : "2",
+        "area" : "23",
+        "address" : "23,Sion(west) mumbai",
+        "thumb" : "https://content.jdmagicbox.com/comp/mumbai/73/022p8710573/catalogue/aparna-restaurant-and-bar-sion-mumbai-tandoori-restaurants-p4dzbiw17h.jpg",
+        "cost" : 950,
+        "contact_number" : "6552465",
+        "type" : [
+                {
+                        "mealtype" : "1",
+                        "name" : "breakfast"
+                },
+                {
+                        "mealtype" : "5",
+                        "name" : "drinks"
+                }
+        ],
+        "Cuisine" : [
+                {
+                        "cuisine" : "3",
+                        "name" : "Chinese"
+                },
+                {
+                        "cuisine" : "1",
+                        "name" : "North Indian"
                 }
         ]
 }

@@ -7,7 +7,7 @@ const Header = () => {
             <nav className="navbar navbar-inverse navbar-expand-md navbar-light bg-danger " > 
     <div className="container-fluid">
         <div className="navbar-header"> <Link to={`/`}>
-                  <a id="logo">e!</a></Link>
+                  <a id="logo">L!</a></Link>
                   <button type="button" className="navbar-toggle"  data-toggle="collapse" data-target="#togglecomponent">
                       <span className="icon-bar"></span>
                       <span className="icon-bar"></span>
